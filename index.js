@@ -49,6 +49,7 @@
 
 // 	for (let char of s) {
 // 		if (library[char]) {
+// 			// console.log(library[char]);
 // 			stack.push(library[char]);
 // 		} else {
 // 			if (stack.pop() !== char) return false;
@@ -125,19 +126,19 @@
 // output[i] is equal to the product of all the elements of nums except nums[i].
 // ● Input 1: [1, 2, 3, 4]
 //output :[24,12,8,6]
-function product(input) {
-	let output = [];
+// function product(input) {
+// 	let output = [];
 
-	for (let i = 0; i < input.length; i++) {
-		let prod = 1;
-		for (let j = 0; j < input.length; j++) {
-			if (i !== j) {
-				prod *= input[j];
-			}
-		}
-		output.push(prod);
-	}
-	return output;
-}
-let arr1 = [1, 2, 3, 4];
-console.log(product(arr1));
+// 	for (let i = 0; i < input.length; i++) {
+// 		let prod = 1;
+// 		for (let j = 0; j < input.length; j++) {
+// 			if (i !== j) {
+// 				prod *= input[j];
+// 			}
+// 		}
+// 		output.push(prod);
+// 	}
+// 	return output;
+// }
+// let arr1 = [1, 2, 3, 4];
+// console.log(product(arr1));
